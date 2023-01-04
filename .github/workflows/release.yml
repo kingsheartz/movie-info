@@ -22,5 +22,5 @@ jobs:
           name: Package
           path: staging
 
-      - name: Release to S3
-        run: bash scripts/pipeline/release.sh "src/main/java/io/javabrains/movieinfoservice/models/Movie.java" "my-storage-v1" "target"
+      # - name: Release to S3
+      #   run: bash scripts/pipeline/release.sh "src/main/java/io/javabrains/movieinfoservice/models/Movie.java" "my-storage-v1" "target"
