@@ -14,7 +14,7 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Build with Maven
-        run: mvn --batch-mode --update-snapshots package
+        run: cd movie-info-postgres && mvn --batch-mode --update-snapshots package
       - name: Make directory named staging
         run: mkdir staging && cp movie-info-postgres/target/*.jar staging
       - uses: actions/upload-artifact@v3
